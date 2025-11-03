@@ -1,0 +1,91 @@
+{
+  "description": "Test questions for RAG system evaluation based on indexed Cochrane reviews",
+  "categories": {
+    "treatment_effectiveness": [
+      "What is the effectiveness of thrombopoietin receptor agonists for preventing chemotherapy-induced thrombocytopenia in patients with solid tumours?",
+      "How effective are pathogen-reduced platelets compared to standard platelets for preventing bleeding?",
+      "What are the benefits and risks of restrictive versus liberal red blood cell transfusion strategies in patients with haematological malignancies?",
+      "Is a therapeutic-only platelet transfusion policy as effective as a prophylactic platelet transfusion policy for people with bone marrow failure disorders?",
+      "What pharmacological interventions are effective for treating painful sickle cell vaso-occlusive crises in adults?",
+      "What is the efficacy of hydroxyurea for treating sickle cell disease?",
+      "How effective are inhaled bronchodilators for acute chest syndrome in sickle cell disease?",
+      "What are the effects of polyclonal antithymocyte globulin compared to other treatments for aplastic anaemia?",
+      "What is the effectiveness of immunotherapy for treating allergic rhinitis?",
+      "How effective are probiotics for treating eczema in children?"
+    ],
+    "comparative_questions": [
+      "What is the difference between restrictive and liberal red blood cell transfusion strategies for patients undergoing chemotherapy?",
+      "How do pathogen-reduced platelets compare to standard platelets in terms of bleeding prevention and adverse events?",
+      "What are the comparative effects of different platelet transfusion thresholds (5x10^9/L vs 10x10^9/L) for preventing bleeding?",
+      "How do TPO-RAs (thrombopoietin receptor agonists) compare to placebo in preventing chemotherapy-induced thrombocytopenia?",
+      "What are the differences between therapeutic-only and prophylactic platelet transfusion policies?",
+      "How effective are NSAIDs versus opioids for managing sickle cell pain crises?",
+      "What is the difference between bone marrow and peripheral blood stem cell transplantation outcomes?"
+    ],
+    "safety_and_adverse_effects": [
+      "What are the adverse events associated with pathogen-reduced platelet transfusions?",
+      "What safety concerns exist with thrombopoietin receptor agonists for chemotherapy-induced thrombocytopenia?",
+      "Are there any serious adverse events when using restrictive versus liberal red blood cell transfusion strategies?",
+      "What are the transfusion-related adverse events reported in platelet transfusion studies?",
+      "What are the risks of platelet refractoriness with pathogen-reduced platelets?",
+      "What adverse events are associated with pharmacological treatments for sickle cell vaso-occlusive crises?",
+      "What are the safety profiles of different platelet transfusion strategies?"
+    ],
+    "statistical_and_outcomes": [
+      "What are the mortality outcomes at 31-100 days for restrictive versus liberal red blood cell transfusion strategies?",
+      "What is the incidence of clinically significant bleeding (WHO grade 2 or higher) with pathogen-reduced platelets?",
+      "What are the platelet transfusion requirements when using therapeutic-only versus prophylactic policies?",
+      "What is the quality of life impact of restrictive versus liberal transfusion strategies?",
+      "What are the serious infection rates comparing restrictive and liberal red blood cell transfusion strategies?",
+      "What are the corrected count increment (CCI) results for pathogen-reduced versus standard platelets?",
+      "What is the time to first bleeding episode in platelet transfusion studies?",
+      "What are the hospital readmission rates for different transfusion strategies?"
+    ],
+    "specific_conditions": [
+      "What treatments are available for chemotherapy-induced thrombocytopenia?",
+      "How should platelet transfusions be managed in patients with bone marrow failure disorders?",
+      "What is the best approach for managing anaemia in patients with haematological malignancies?",
+      "What interventions are effective for sickle cell disease pain crises?",
+      "How should thrombocytopenia be managed in patients with solid tumours?",
+      "What are the treatment options for aplastic anaemia?",
+      "How is bleeding prevented in patients with chronic thrombocytopenia?"
+    ],
+    "population_specific": [
+      "What are the effects of restrictive versus liberal transfusion strategies specifically in adults with acute leukaemia?",
+      "How effective are platelet transfusions in paediatric patients with bone marrow failure?",
+      "What are the transfusion requirements for elderly patients (over 65 years) with haematological malignancies?",
+      "What is the effectiveness of treatments for sickle cell disease in adolescents and young adults?"
+    ],
+    "complex_multipart_queries": [
+      "For patients with chemotherapy-induced thrombocytopenia, what are the most effective treatments, their associated adverse events, and how do they compare to standard care?",
+      "Compare the effectiveness, safety, and quality of life outcomes of restrictive versus liberal red blood cell transfusion strategies for patients with haematological malignancies receiving intensive chemotherapy or stem cell transplantation.",
+      "What is the evidence regarding platelet transfusion strategies for preventing bleeding in patients with bone marrow disorders, including both effectiveness and safety outcomes?",
+      "Provide a comprehensive comparison of pathogen-reduced platelets versus standard platelets, including effects on bleeding, platelet recovery, transfusion requirements, and adverse events.",
+      "What are the clinical outcomes, including mortality, bleeding, infections, and quality of life, when using different red blood cell transfusion thresholds in haematological malignancy patients?"
+    ],
+    "methodology_and_evidence_quality": [
+      "What is the quality of evidence (GRADE) for the effectiveness of thrombopoietin receptor agonists in preventing chemotherapy-induced thrombocytopenia?",
+      "What randomized controlled trials have been conducted on platelet transfusion strategies for bone marrow failure disorders?",
+      "What are the limitations of the evidence for restrictive versus liberal red blood cell transfusion strategies?",
+      "How many participants were included in studies comparing therapeutic-only versus prophylactic platelet transfusions?",
+      "What is the risk of bias in studies evaluating pathogen-reduced platelets?"
+    ],
+    "pico_based_queries": [
+      "For patients with solid tumours receiving chemotherapy (Population), what is the effectiveness of TPO-RAs (Intervention) compared to placebo (Comparison) for preventing thrombocytopenia (Outcome)?",
+      "In patients with bone marrow failure disorders, how do therapeutic-only platelet transfusions compare to prophylactic transfusions for preventing bleeding episodes?",
+      "For adults with sickle cell disease experiencing vaso-occlusive crises, what pharmacological interventions are most effective for pain relief?",
+      "What are the outcomes for haematological malignancy patients when using restrictive versus liberal red blood cell transfusion thresholds?"
+    ]
+  },
+  "metadata": {
+    "total_questions": 57,
+    "categories": 9,
+    "notes": [
+      "Questions are based on actual indexed data from Cochrane reviews",
+      "Questions cover multiple medical topics: Blood disorders, Allergy/intolerance, Child health, etc.",
+      "Questions test different query types: factual, comparative, statistical, complex",
+      "All questions reference data that has been indexed in Weaviate"
+    ]
+  }
+}
+

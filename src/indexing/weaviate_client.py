@@ -7,14 +7,21 @@ from weaviate.classes.config import Configure, Property, DataType
 from weaviate.classes.query import Filter
 from weaviate.classes.init import AdditionalConfig, Timeout
 from src.core.chunk_models import BaseChunk, ChunkCollection, ChunkLevel
-from src.indexing.config import WeaviateConfig
+from src.indexing.config import WeaviateConfig, EmbeddingConfig
 
 
 class WeaviateManager:
 
-    def __init__(self):
+    def __init__(self, embedder=None):
         self.config = WeaviateConfig()
+        self.embedding_config = EmbeddingConfig()
         self.client = None
+        
+        if embedder is None:
+            from src.retrieving.embedder_factory import get_embedder
+            embedder = get_embedder(self.embedding_config, mode="article")
+        
+        self.embedder = embedder
         self._connect()
 
     def _connect(self):
@@ -210,20 +217,16 @@ class WeaviateManager:
     
     def insert_chunks(self, chunk_collection: ChunkCollection) -> bool:
         try:
-            from src.retrieving.embedder import OpenAIEmbedder
-            
             chunks_collection = self.client.collections.get(
                 self.config.COLLECTION_CHUNKS
             )
 
             all_chunks = chunk_collection.get_all_chunks()
-            
-            embedder = OpenAIEmbedder()
 
             with chunks_collection.batch.dynamic() as batch:
                 for chunk in all_chunks:
                     weaviate_obj = self._chunk_to_weaviate_object(chunk)
-                    vector = embedder.encode(chunk.content)
+                    vector = self.embedder.encode(chunk.content)
                     batch.add_object(properties=weaviate_obj, vector=vector)
 
             return True

@@ -36,3 +36,14 @@ class PathConfig:
     PROCESSED_DATA_DIR = PROJECT_ROOT / 'processed_data'
     LOGS_DIR = PROJECT_ROOT / 'processing_logs'
 
+
+class EmbeddingConfig:
+    EMBEDDING_MODEL = os.getenv('EMBEDDING_MODEL', 'openai')
+    
+    OPENAI_MODEL_NAME = os.getenv('OPENAI_MODEL_NAME', 'text-embedding-3-small')
+    MEDCPT_QUERY_MODEL = os.getenv('MEDCPT_QUERY_MODEL', 'ncbi/MedCPT-Query-Encoder')
+    MEDCPT_ARTICLE_MODEL = os.getenv('MEDCPT_ARTICLE_MODEL', 'ncbi/MedCPT-Article-Encoder')
+    BIOLORD_MODEL_NAME = os.getenv('BIOLORD_MODEL_NAME', 'FremyCompany/BioLORD-2023')
+    
+    DEVICE = os.getenv('EMBEDDING_DEVICE', 'cpu')
+

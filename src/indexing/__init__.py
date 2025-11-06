@@ -11,7 +11,7 @@ This module handles the creation and management of hierarchical chunks and vecto
 from .chunker import MultiLevelChunker
 from .weaviate_client import WeaviateManager
 from .indexing_pipeline import IndexingPipeline
-from .config import WeaviateConfig, ChunkingConfig, PathConfig
+from .config import WeaviateConfig, ChunkingConfig, PathConfig, EmbeddingConfig
 
 __all__ = [
     'MultiLevelChunker',
@@ -19,5 +19,6 @@ __all__ = [
     'IndexingPipeline',
     'WeaviateConfig',
     'ChunkingConfig',
-    'PathConfig'
+    'PathConfig',
+    'EmbeddingConfig'
 ]

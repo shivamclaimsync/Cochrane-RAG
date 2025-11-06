@@ -5,8 +5,7 @@ Retrieval system for Cochrane RAG using OpenAI embeddings.
 from typing import List, Dict, Any, Optional
 from dataclasses import dataclass
 from weaviate.classes.query import Filter, MetadataQuery
-from src.indexing.weaviate_client import WeaviateManager
-from src.retrieving.embedder import OpenAIEmbedder
+from src.indexing.config import EmbeddingConfig
 
 
 @dataclass
@@ -52,12 +51,19 @@ Result:
 class CochraneRetriever:
     """Retrieval system for Cochrane medical documents."""
 
-    def __init__(self):
-        """Initialize retriever with Weaviate and OpenAI embedder."""
+    def __init__(self, embedder=None):
         print("Initializing Cochrane Retriever...")
-        self.weaviate_manager = WeaviateManager()
+        self.embedding_config = EmbeddingConfig()
+        
+        if embedder is None:
+            from src.retrieving.embedder_factory import get_embedder
+            embedder = get_embedder(self.embedding_config, mode="query")
+        
+        self.embedder = embedder
+        
+        from src.indexing.weaviate_client import WeaviateManager
+        self.weaviate_manager = WeaviateManager(embedder=self.embedder)
         self.collection = self.weaviate_manager.client.collections.get("CochraneChunk")
-        self.embedder = OpenAIEmbedder()
         print("✅ Retriever ready!")
 
     def search(

@@ -1,0 +1,118 @@
+{
+  "total_topics": 7,
+  "total_questions": 70,
+  "topics": [
+    {
+      "topic": "Cancer",
+      "question_count": 10,
+      "questions": [
+        "What are the most effective treatments for early-stage breast cancer?",
+        "How does chemotherapy compare to immunotherapy for lung cancer?",
+        "What are the survival rates for patients with colorectal cancer?",
+        "Are there effective screening methods for prostate cancer?",
+        "What are the side effects of radiation therapy for cancer treatment?",
+        "How effective is targeted therapy for treating melanoma?",
+        "What is the role of surgery in treating pancreatic cancer?",
+        "Are there evidence-based approaches for cancer pain management?",
+        "How does nutrition affect cancer treatment outcomes?",
+        "What are the latest findings on cancer prevention strategies?"
+      ]
+    },
+    {
+      "topic": "Child health",
+      "question_count": 10,
+      "questions": [
+        "What are the best practices for treating asthma in children?",
+        "How effective are vaccines in preventing childhood diseases?",
+        "What are evidence-based treatments for childhood obesity?",
+        "How do we manage attention deficit hyperactivity disorder (ADHD) in children?",
+        "What are effective interventions for children with autism spectrum disorder?",
+        "How should we treat common childhood infections?",
+        "What are the best approaches for managing diabetes in children?",
+        "How effective are behavioral interventions for children with anxiety?",
+        "What are evidence-based strategies for preventing childhood injuries?",
+        "How do we manage chronic conditions in pediatric patients?"
+      ]
+    },
+    {
+      "topic": "Complementary & alternative medicine",
+      "question_count": 10,
+      "questions": [
+        "Is acupuncture effective for treating chronic pain?",
+        "How does herbal medicine compare to conventional treatments?",
+        "Are there evidence-based uses for meditation in healthcare?",
+        "What is the effectiveness of chiropractic treatment for back pain?",
+        "Can yoga help with anxiety and depression?",
+        "How effective are dietary supplements for various health conditions?",
+        "What is the role of massage therapy in pain management?",
+        "Are there proven benefits of homeopathy?",
+        "How effective is traditional Chinese medicine for specific conditions?",
+        "What does research say about the effectiveness of aromatherapy?"
+      ]
+    },
+    {
+      "topic": "Lungs & airways",
+      "question_count": 10,
+      "questions": [
+        "What are the most effective treatments for chronic obstructive pulmonary disease (COPD)?",
+        "How should asthma be managed in adults?",
+        "What are evidence-based approaches to quitting smoking?",
+        "How effective are treatments for acute respiratory infections?",
+        "What are the best management strategies for bronchiectasis?",
+        "How do we treat pulmonary embolism effectively?",
+        "What interventions work best for sleep apnea?",
+        "How effective are treatments for tuberculosis?",
+        "What are evidence-based approaches to managing lung cancer?",
+        "How should we treat and prevent pneumonia?"
+      ]
+    },
+    {
+      "topic": "Pain & anaesthesia",
+      "question_count": 10,
+      "questions": [
+        "What are the most effective pain management strategies for chronic pain?",
+        "How do different types of anesthesia compare in safety and effectiveness?",
+        "What are evidence-based treatments for neuropathic pain?",
+        "How effective are non-opioid pain medications?",
+        "What are the best practices for postoperative pain management?",
+        "How should we manage pain in patients with opioid tolerance?",
+        "What are effective alternatives to opioids for pain relief?",
+        "How do regional anesthesia techniques compare to general anesthesia?",
+        "What are evidence-based approaches to managing migraine headaches?",
+        "How effective are non-pharmacological interventions for pain management?"
+      ]
+    },
+    {
+      "topic": "Pregnancy & childbirth",
+      "question_count": 10,
+      "questions": [
+        "What are the safest and most effective methods for pain relief during labor?",
+        "How effective are different methods of contraception?",
+        "What are evidence-based practices for prenatal care?",
+        "How should we manage high-risk pregnancies?",
+        "What are the best approaches to preventing preterm birth?",
+        "How effective are interventions for managing gestational diabetes?",
+        "What are evidence-based strategies for postpartum care?",
+        "How do different delivery methods compare in safety and outcomes?",
+        "What are effective treatments for morning sickness during pregnancy?",
+        "How should we manage complications during pregnancy and childbirth?"
+      ]
+    },
+    {
+      "topic": "Reproductive & sexual health",
+      "question_count": 10,
+      "questions": [
+        "What are the most effective treatments for erectile dysfunction?",
+        "How effective are treatments for polycystic ovary syndrome (PCOS)?",
+        "What are evidence-based approaches to managing menopause symptoms?",
+        "How should we treat sexually transmitted infections?",
+        "What are effective treatments for infertility?",
+        "How effective are hormonal contraceptives and what are their side effects?",
+        "What are evidence-based treatments for endometriosis?",
+        "How should we manage menstrual disorders?",
+        "What are effective interventions for sexual dysfunction in women?",
+        "How do different fertility treatments compare in effectiveness and safety?"
+      ]
+    }
+  ]
+}
